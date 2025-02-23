@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Toolkit Pro - SEO & Content Analysis Suite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #6366f1;
+            --secondary-color: #4f46e5;
+            --accent-color: #10b981;
+            --text-color: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            color: var(--text-color);
+            background: #f8fafc;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-card {
+            background: white;
+            border-radius: 1.25rem;
+            padding: 2rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .gradient-badge {
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+        }
+
+        .category-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 4rem 0;
+            }
+            
+            .tool-card {
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#" style="color: var(--primary-color);">
+                <i class="fas fa-tools me-2"></i>Content Toolkit Pro
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="gradient-badge">New Feature Update</span>
+                    <h1 class="display-4 fw-bold mt-4 mb-4">Supercharge Your Content Strategy</h1>
+                    <p class="lead mb-4">Professional-grade tools for SEO experts, content creators, and digital marketers</p>
+                    <button class="btn btn-primary btn-lg px-5 py-3">Explore Tools</button>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0">
+                    <img src="analytics-illustration.svg" alt="Content Analysis" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Tools -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="fw-bold mb-3">Featured Tools</h2>
+                    <p class="text-muted">Essential utilities for modern content creators</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- AI Content Detector -->
+                <div class="col-md-4">
+                    <div class="tool-card">
+                        <div class="icon-wrapper bg-primary">
+                            <i class="fas fa-robot text-white fa-2x"></i>
+                        </div>
+                        <h4>AI Content Detector</h4>
+                        <p class="text-muted">Identify AI-generated content with 98% accuracy</p>
+                        <a href="/AI Content Detector.html" class="btn btn-outline-primary">Try Now</a>
+                    </div>
+                </div>
+
+                <!-- EEAT Calculator -->
+                <div class="col-md-4">
+                    <div class="tool-card">
+                        <div class="icon-wrapper bg-success">
+                            <i class="fas fa-calculator text-white fa-2x"></i>
+                        </div>
+                        <h4>EEAT Score Calculator</h4>
+                        <p class="text-muted">Comprehensive expertise and authority analysis</p>
+                        <a href="#" class="btn btn-outline-success">Calculate Now</a>
+                    </div>
+                </div>
+
+                <!-- Content Humanizer -->
+                <div class="col-md-4">
+                    <div class="tool-card">
+                        <div class="icon-wrapper bg-warning">
+                            <i class="fas fa-file-alt text-white fa-2x"></i>
+                        </div>
+                        <h4>Content Humanizer</h4>
+                        <p class="text-muted">Transform AI text into natural human writing</p>
+                        <a href="#" class="btn btn-outline-warning">Humanize Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Categories -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="category-card">
+                        <h3 class="mb-3"><i class="fas fa-chart-line me-2"></i>Content Analysis</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-decoration-none">Plagiarism Checker</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none">Readability Analyzer</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none">SEO Content Grader</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="category-card">
+                        <h3 class="mb-3"><i class="fas fa-shield-alt me-2"></i>SEO Tools</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="text-decoration-none">Backlink Analyzer</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none">Keyword Density Checker</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none">SERP Simulator</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="stats-number">500K+</div>
+                    <p class="text-muted">Analyses Performed</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">98%</div>
+                    <p class="text-muted">Accuracy Rate</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">4.9★</div>
+                    <p class="text-muted">User Rating</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="stats-number">50+</div>
+                    <p class="text-muted">Advanced Tools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Pricing Section -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">Choose Your Plan</h2>
+        <p class="text-muted mb-4">Pick the plan that fits your needs</p>
+        <div class="row g-4">
+            <!-- Basic Plan -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Plan</h5>
+                        <h3 class="text-primary">$29/month</h3>
+                        <p class="card-text">Essential tools for starters.</p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Pro Plan -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Pro Plan</h5>
+                        <h3 class="text-primary">$79/month</h3>
+                        <p class="card-text">Unlock advanced features and analytics.</p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Premium Plan -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Plan</h5>
+                        <h3 class="text-primary">$149/month</h3>
+                        <p class="card-text">For professional content creators with full access.</p>
+                        <a href="#" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>Content Toolkit Pro</h5>
+                    <p class="text-muted">Professional content analysis suite for modern creators</p>
+                </div>
+                <div class="col-md-2">
+                    <h6>Tools</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">AI Detector</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">EEAT Calculator</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Humanizer</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Privacy</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Terms</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Stay Updated</h6>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
